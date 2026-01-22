@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Samir Alam - Frontend Web Developer Portfolio. Showcasing projects in HTML, CSS, JavaScript, and React."
+    />
+    <title>Samir Alam | Frontend Developer Portfolio</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=files"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left-side">
+          <a href="index.html">
+            <span class="material-symbols-outlined"> </span>
+          </a>
+        </div>
+
+        <div class="right-side">
+          <a href="#home">Home</a>
+          <a href="#about-me">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact-us">Contact Me</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <h1>Frontend Developer</h1>
+
+        <div class="left-right">
+          <div class="left-align">
+            <p>
+              <span id="span-1">Hello,</span><br />
+              <span class="name">I'm Samir</span><br />
+              <span class="title">Frontend Web Developer</span>
+            </p>
+            <p class="description">
+              I build clean, responsive, and user-friendly web interfaces using
+              HTML, CSS, JavaScript, and React (Basics).<br />
+              Actively seeking frontend internships & entry-level roles.
+            </p>
+
+            <div class="buttons">
+              <button class="resume-btn-wrapper">
+                <a
+                  href="https://drive.google.com/file/d/1_1VsLxvxchn8v99RekY8GdW0x-uhD37q/view?usp=sharing"
+                  download="Samir_Alam"
+                  class="resume-btn"
+                >
+                  <span class="material-symbols-outlined"> files</span> CV
+                </a>
+              </button>
+              <button class="github-btn-wrapper">
+                <a
+                  href="https://github.com/samiralamm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="github-btn"
+                >
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+              </button>
+            </div>
+          </div>
+
+          <div class="right-align">
+            <img
+              src="assets/images/developer-illustration.png"
+              alt="Developer working on laptop illustration"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about-me" class="about-section">
+        <div class="row">
+          <div class="column-1">
+            <img
+              src="assets/images/Adobe Express - file.png"
+              alt="Samir Alam profile"
+            />
+          </div>
+          <div class="column-2">
+            <h2>About Me</h2>
+            <p>
+              I'm a final-year engineering student and Frontend Web Developer
+              with a strong focus on building responsive and accessible web
+              interfaces.
+              <br /><br />
+              I enjoy converting designs into clean code and improving user
+              experience using modern frontend practices. I've built real-world
+              projects like a portfolio website, JavaScript calculator, and a
+              React To-Do app.
+              <br /><br />
+              I'm currently looking for frontend internships where I can learn,
+              contribute, and grow with a team.
+            </p>
+
+            <div class="tab-title">
+              <p
+                class="tab-links active-link"
+                onclick="opentab(event, 'skills')"
+              >
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab(event, 'experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab(event, 'education')">
+                Education
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <strong>Languages:</strong>
+                  <span>Python, HTML & CSS, JavaScript, Java</span>
+                </li>
+                <li>
+                  <strong>Frameworks:</strong>
+                  <span>Flask, Bootstrap, Tailwind CSS, React (Basics)</span>
+                </li>
+                <li>
+                  <strong>Tools:</strong>
+                  <span>PyCharm, Git & GitHub, VS Code, Live Server</span>
+                </li>
+                <li>
+                  <strong>Soft Skills:</strong>
+                  <span
+                    >Problem Solving, Logical Thinking, Attention to Detail,
+                    Creativity, Teamwork</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Web Development Internship</span><br />CodeAlpha -
+                  Remote
+                </li>
+              </ul>
+              <p class="experience-details">
+                Worked on Task Assignment & Tracking System and CRM Tool using
+                Python.
+              </p>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>NIMS University Rajasthan, Jaipur</span><br />Bachelor
+                  of Technology in CSE; GPA: 6.94
+                </li>
+                <li>
+                  <span>DON BOSCO HIGH SCHOOL BAISHAKHI PACHRUKHI</span
+                  ><br />Science in Mathematics, 72.2%
+                </li>
+                <li>
+                  <span>S S SR SEC SCHOOL NEWAJI TOLA REVELGANJA</span
+                  ><br />Percentage: 74%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services/Projects Section -->
+      <section id="projects" class="services">
+        <div class="container">
+          <h2>What I Do</h2>
+          <div class="services-list">
+            <div class="service-card">
+              <i class="fas fa-code"></i>
+              <h3>Frontend Development</h3>
+              <ul>
+                <li>Responsive website development</li>
+                <li>UI implementation from designs</li>
+                <li>JavaScript-based interactions</li>
+              </ul>
+            </div>
+
+            <div class="service-card">
+              <i class="fab fa-js"></i>
+              <h3>JavaScript Development</h3>
+              <ul>
+                <li>Form validation</li>
+                <li>DOM manipulation</li>
+                <li>Interactive UI components</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact-us" class="contact-section">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>Contact Me</h2>
+            <div class="contact-details">
+              <a href="mailto:mrsamiralam21@gmail.com">
+                <i class="fas fa-envelope"></i> mrsamiralam21@gmail.com
+              </a>
+              <a href="tel:+919031976507">
+                <i class="fas fa-phone"></i> +91 90319 76507
+              </a>
+            </div>
+          </div>
+
+          <form
+            id="contactForm"
+            class="contact-form"
+            onsubmit="handleSubmit(event)"
+          >
+            <input
+              type="text"
+              name="name"
+              class="input"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              class="input"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              class="input message-input"
+              placeholder="Your Message"
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links1">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about-me">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-us">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links2">
+        <h3>Connect</h3>
+        <ul>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1rL6eSnNTJyRplub-fGqW1m-uQOV4XejH/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/samiralamm"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/samiralamm/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+          <li><a href="mailto:mrsamiralam21@gmail.com">Email</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Samir Alam. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
